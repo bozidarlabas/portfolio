@@ -1,0 +1,63 @@
+/*=============== PROJECTS ===============*/
+.projects{
+   background-color: var(--container-color);
+
+   &__container{
+      row-gap: 2rem;
+      justify-content: center;
+      padding-block: 1rem;
+   }
+   &__card{
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+   }
+   &__img{
+      width: 100%;
+      height: 100%;
+   }
+   &__modal{
+      position: absolute;
+      left: 0;
+      bottom: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, 
+                hsl(0, 0%, 0%, 0) 0%,
+                  hsla(var(--hue), 70%, 40%, .8) 120%);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px); // For safari
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: bottom .4s;
+   }
+   &__subtitle,
+   &__button{
+      color: var(--title-color);
+      font-size: var(--small-font-size);
+   }
+   &__subtitle{
+      display: block;
+      margin-bottom: .25rem;
+   }
+   &__title{
+      font-size: var(--h2-font-size);
+      margin-bottom: .75rem;
+   }
+   &__button{
+      display: flex;
+      align-items: center;
+      column-gap: .5rem;
+      font-weight: var(--font-medium);
+
+      & i{
+         font-size: 1.25rem;
+      }
+   }
+   &__card:hover .projects__modal{
+      bottom: 0;
+   }
+}

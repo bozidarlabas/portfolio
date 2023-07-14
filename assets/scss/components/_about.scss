@@ -1,0 +1,22 @@
+/*=============== ABOUT ===============*/
+.about{
+   &__container{
+      row-gap: 2.5rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__image{
+      justify-self: center;
+   }
+   &__blob{
+      width: 320px;
+      
+      & path{
+         stroke: var(--first-color);
+      }
+   }
+}

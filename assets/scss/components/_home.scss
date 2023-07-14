@@ -1,0 +1,59 @@
+/*=============== HOME ===============*/
+.home{
+   background-color: var(--container-color);
+
+   &__container{
+      padding-top: 2rem;
+      row-gap: 2.5rem;
+   }
+   &__content{
+      display: grid;
+      row-gap: 2rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__subtitle,
+   &__education{
+      font-size: var(--bigger-font-size);
+   }
+   &__subtitle span,
+   &__title{
+      color: var(--first-color);
+   }
+   &__title{
+      font-size: var(--biggest-font-size);
+      font-weight: var(--font-semi-bold);
+   }
+   &__description{
+      margin-block: 1rem 1.5rem;
+      color: var(--title-color);
+   }
+   &__social{
+      display: flex;
+      justify-content: center;
+      column-gap: 1.25rem;
+      
+      &-link{
+         display: flex;
+         background-color: var(--first-color-alt);
+         padding: .5rem;
+         color: var(--title-color);
+         font-size: 1.5rem;
+         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+         transition: transform .4s;
+
+         &:hover{
+            transform: translateY(-.25rem);
+         }
+      }
+   }
+   &__image{
+      justify-self: center;
+   }
+   &__blob{
+      width: 320px;
+      fill: var(--first-color);
+      filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
+   }
+}

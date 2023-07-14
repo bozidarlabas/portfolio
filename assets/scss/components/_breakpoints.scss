@@ -1,0 +1,229 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+   .container{
+      margin-inline: 1rem;
+   }
+
+   .skills__content{
+      grid-template-columns: max-content;
+      row-gap: 1rem;
+   }
+
+   .services__card{
+      padding-block: 1.5rem;
+   }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+   .home__container,
+   .about__container,
+   .skills__container,
+   .services__container,
+   .projects__container,
+   .contact__container{
+      grid-template-columns: 360px;
+      justify-content: center;
+   }
+}
+
+@media screen and (min-width: 768px){
+   .nav__menu{
+      width: 55%;
+   }
+
+   .home__container,
+   .about__container,
+   .skills__container{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+   }
+
+   .home__data,
+   .about__data,
+   .skills__data,
+   :is(.about__data, .skills__data) :is(.section__subtitle, .section__title){
+      text-align: initial;
+   }
+
+   .home__social{
+      justify-content: initial;
+   }
+
+   .home__blob,
+   .about__blob{
+      width: 400px;
+   }
+
+   .about__data{
+      order: 1;
+   }
+
+   .services__container,
+   .projects__container{
+      grid-template-columns: repeat(2, 352px);
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+   .section{
+      padding-block: 7rem 2rem;
+
+      &__subtitle{
+         font-size: var(--normal-font-size);
+      }
+   }
+
+   .nav{
+      height: calc(var(--header-height) + 1.5rem);
+      
+      &__close,
+      &__toggle{
+         display: none;
+      }
+      &__list{
+         flex-direction: row;
+         column-gap: 3rem;
+      }
+      &__menu{
+         width: initial;
+      }
+   }
+
+   .blur-header::after{
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px); // For safari
+   }
+}
+
+@media screen and (min-width: 1152px){
+   .container{
+      margin-inline: auto;
+   }
+
+   .home{
+      &__container{
+         grid-template-columns: 455px 550px;
+         column-gap: 7rem;
+         padding-block: 2rem 3rem;
+      }
+      &__blob{
+         width: 550px;
+      }
+      &__content{
+         row-gap: 4.5rem;
+      }
+      &__description{
+         margin-block: 1.5rem 2.5rem;
+      }
+      &__social{
+         column-gap: 1.5rem;
+      }
+   }
+
+   .about{
+      &__container{
+         grid-template-columns: 550px 460px;
+         column-gap: 4.5rem;
+         padding-bottom: 1rem;
+      }
+      &__blob{
+         width: 550px;
+      }
+      &__description{
+         margin-bottom: 3rem;
+      }
+   }
+
+   .skills{
+      &__container{
+         grid-template-columns: 340px 425px;
+         column-gap: 10rem;
+         padding-bottom: 4rem;
+      }
+      &__description{
+         margin-bottom: 3rem;
+      }
+      &__content{
+         column-gap: 8rem;
+      }
+      &__group{
+         row-gap: 1.5rem;
+      }
+      &__item{
+         font-size: var(--h3-font-size);
+      }
+   }
+
+   .services{
+      &__container{
+         grid-template-columns: repeat(3, 352px);
+         padding-block: 2.5rem 4rem;
+      }
+      &__card{
+         padding: 3.5rem 2rem;
+      }
+   }
+
+   .projects{
+      &__container{
+         grid-template-columns: repeat(3, 350px);
+         row-gap: 3rem;
+         padding-block: 2.5rem 4rem;
+      }
+      &__button{
+         font-size: var(--normal-font-size);
+      }
+   }
+
+   .contact{
+      &__container{
+         grid-template-columns: 680px;
+         padding-block: 2.5rem 2rem;
+      }
+      &__form{
+         row-gap: 1.5rem;
+      }
+      &__group{
+         grid-template-columns: repeat(2, 1fr);
+         column-gap: 1.5rem;
+      }
+      &__input{
+         padding: 1.5rem;
+      }
+      &__form textarea{
+         height: 20rem;
+      }
+   }
+
+   .footer{
+      padding-block: 4.5rem 4rem;
+
+      &__container{
+         grid-template-columns: repeat(3, 1fr);
+         align-items: center;
+         text-align: initial;
+      }
+      &__title{
+         font-size: var(--bigger-font-size);
+      }
+      &__social{
+         column-gap: 1.5rem;
+      }
+      &__copy{
+         margin: 0;
+         justify-self: flex-end;
+      }
+   }
+
+   .scrollup{
+      right: 3rem;
+   }
+}
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+
+
+/* For 4K resolutions (3840 x 2160, 4096 x 2160) */

@@ -1,0 +1,37 @@
+/*=============== SKILLS ===============*/
+.skills{
+   background-color: var(--container-color);
+
+   &__container{
+      padding-bottom: 2rem;
+      row-gap: 3.5rem;
+   }
+   &__data{
+      text-align: center;
+   }
+   &__description{
+      margin-bottom: 2rem;
+   }
+   &__content,
+   &__group{
+      display: grid;
+   }
+   &__content{
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 4rem;
+      justify-content: center;
+      align-items: baseline;
+   }
+   &__group{
+      row-gap: 1rem;
+      list-style: decimal-leading-zero;
+   }
+   &__item{
+      font-weight: var(--font-medium);
+      color: var(--title-color);
+
+      &::marker{
+         color: var(--first-color);
+      }
+   }
+}

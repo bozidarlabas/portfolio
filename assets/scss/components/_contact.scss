@@ -1,0 +1,40 @@
+/*=============== CONTACT ===============*/
+.contact{
+   &__container{
+      padding-top: 1rem;
+   }
+   &__form,
+   &__group{
+      display: grid;
+      row-gap: 1rem;
+   }
+   &__form{
+      position: relative;
+   }
+   &__input{
+      padding: 1rem 1.25rem;
+      border-radius: .5rem;
+      background-color: var(--container-color);
+      color: var(--title-color);
+
+      &::placeholder{
+         color: var(--text-color);
+      }
+   }
+   &__form textarea{
+      height: 11rem;
+      resize: none;
+      margin-bottom: 2rem;
+   }
+   &__button{
+      justify-self: center;
+      cursor: pointer
+   }
+   &__message{
+      position: absolute;
+      left: 0;
+      bottom: 4.5rem;
+      font-size: var(--small-font-size);
+      color: var(--title-color);
+   }
+}
