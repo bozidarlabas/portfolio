@@ -477,15 +477,15 @@ svg {
   transition: bottom .4s;
 }
 
-.projects__modal2 {
+.projects2__modal {
   position: absolute;
   left: 0;
   bottom: -100%;
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, 
-            hsla(0, 0%, 0%, 0) 100%, 
-            hsla(var(--hue), 0%, 0%, .8) 120%);
+            hsla(0, 0%, 0%, 0) 0%, 
+            hsla(var(--hue), 70%, 40%, .8) 120%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px); /* For safari */
   border-radius: 1rem;
@@ -552,11 +552,7 @@ svg {
   font-size: 1.25rem;
 }
 
-.projects__card:hover .projects__modal {
-  bottom: 0;
-}
-
-.projects__card:hover .projects__modal2 {
+.projects__card:hover .projects__modal .projects2__modal {
   bottom: 0;
 }
 
