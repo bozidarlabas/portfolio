@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Neuron Template - Single Post</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />
+
+
+
+
+<style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+            font-size: 15px;
+        }
+
+        .function-name {
+            color: #800; /* Dark red color for the function name */
+        }
+
+        .in-function-name {
+            color: #c7254e
+        }
+
+        p, li{
+            font-size: 20px;
+            line-height: 38px;
+            color: #121c25;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: "Lato";
+            letter-spacing: normal;
+        }
+
+        p {
+            margin-bottom: 32px;
+            margin-top: 32px;
+        }
+
+        code {
+            font-size: 14px;
+        }
+
+        .imageRounded {
+            border-radius: 24px !important;
+        }
+
+    </style>
+    
+    
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+         <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+              </button>
+              <a href="../index.html" class="navbar-brand">Božidar Labaš</a>
+         </div>
+         <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                   <li class="active"><a href="../index.html">Home</a></li>
+                   <li class="active"><a href="index.html">Blogs</a></li>
+              </ul>
+         </div>
+
+ </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-single-post parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>tvOS tips and tricks</h1>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Blog Single Post Section -->
+
+<section id="blog-single-post">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="blog-single-post-thumb">
+                         
+
+                         <div class="blog-post-title">
+                              <h2>Tricks and techniques I’ve learned while developing an app for tvOS.
+                            </a></h2>
+                         </div>
+
+                         <div class="blog-post-format">
+                              <span>Božidar Labaš</span>
+                              <span><i class="fa fa-date"></i> Dec 6, 2023</span>
+                         </div>
+
+                         <div class="blog-post-des">
+                            <p>In this blog post, I will share the most important differences I discovered between iOS and tvOS while developing a tvOS app. As you explore these distinctions, consider this as a valuable starting point for your journey into <strong>tvOS development</strong>.</p>
+                              <p>The tvOS app I worked on had already been implemented for iOS and macOS. Each platform has its own <strong>target</strong> with a corresponding UI. Adopting the <strong>MVVM</strong> architecture simplified the process of implementing the tvOS UI and connecting ViewControllers with existing ViewModels.</p>
+                              <!-- <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </blockquote>
+                              <p>Integer vestibulum vitae arcu vel consectetur. Morbi nisl enim, elementum eget enim nec, posuere commodo mi. Proin elementum metus et dolor posuere placerat. Proin in sagittis justo. Nulla tincidunt eu velit elementum accumsan.</p> -->
+                              
+                              <div class="blog-post-image">
+                              <img src="images/image_1.png" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+                         </div>
+
+                        <p>This blog post will cover the following sections:</p>
+                        <ol>
+                        <li>
+                            <strong>tvOS Frameworks:</strong>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">Determine which frameworks to use for developing a tvOS app.</p>
+                          </li>
+                          <li>
+                            <strong>UI Implementation</strong>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">Choose a method for implementing the UI.</p>
+                          </li>
+                          <li>
+                            <strong>Key Differences Between iOS and tvOS App Development</strong>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">Apple TV uses a physical remote control. Button states on tvOS need to be managed, and the focus engine holds significant importance in tvOS development.</p>
+                          </li>
+                          <li>
+                            <strong>tvOS Restrictions</strong>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">Discuss any limitations specific to tvOS.</p>
+                          </li>
+                        </ol>
+
+                        <div class="blog-post-des">
+                            <p>Everything explained in this post will be available on <a href="https://github.com/bozidarlabas/tvOSBlog" target="_blank" style="text-decoration: underline !important;">GitHub</a>, where you can look at the finished implementations as you follow along.</p>
+                        </div>
+                                                
+                        
+                         
+                        <h3>tvOS frameworks</h3>
+                        <p>tvOS apps can be developed through the traditional fully <strong>native approach</strong>, employing Objective-C or Swift, Storyboards, XIBs, Autolayout in code, as well as SwiftUI.</p>
+                        <p>Alternatively, developers can opt for another approach using <strong>TVML (TV Markup Language)</strong> and the TVJS framework.</p></p>
+                        <div class="blog-post-image">
+                            <img src="images/image_2.png" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+                       </div>
+                       <p>I chose approach 1 for these reasons:</p>
+                       <ul>
+                        <li>
+                          <strong>Consistency Across Platforms:</strong><br>
+                          Unified Swift codebase ensures seamless cross-platform development, code reuse, and simplified maintenance.
+                        </li>
+                        <li>
+                          <strong>Leveraging Existing Expertise:</strong><br>
+                          Leveraging my strong Swift and iOS development background promotes efficiency and minimizes the learning curve associated with new frameworks like TVML.
+                        </li>
+                        <li>
+                          <strong>Full Control Over UI and Interactivity:</strong><br>
+                          The native approach provides granular control over UI and behavior, essential for crafting a seamless and tailored user experience aligned with project goals.
+                        </li>
+                        <li>
+                          <strong>Utilizing Rich iOS Ecosystem:</strong><br>
+                          Choosing the native approach taps into the wealth of iOS libraries, tools, and resources, facilitating seamless integration and accelerating development.
+                        </li>
+                      </ul>
+
+                      <h3>UI implementation</h3>
+
+                      <p>Ways to implement UI in tvOS include:</p>
+                      <ol>
+                        <li>Autolayout in code  (using NSLayoutConstraint or some external libraries)</li>
+                        <li>Storyboards and Interface Builder</li>
+                        <li>SwiftUI</li>
+                      </ol>
+
+                      <p>I chose Auto Layout in code, using the native <a href="https://developer.apple.com/documentation/uikit/nslayoutconstraint" target="_blank" style="text-decoration: underline !important;">NSLayoutConstraint</a> class for UI, opting for its simplicity and eliminating the need for additional libraries.</p>
+
+
+                      <h3>Key differences between iOS and tvOS app development</h3>
+                      <p>The most important differences are:</p>
+                      <ul>
+                        <li>
+                            Controls
+                        </li>
+                        <li>
+                            Button states
+                        </li>
+                        <li>
+                            Focus engine
+                        </li>
+                      </ul>
+
+                      <!-- CONTROLS -->
+                      
+                      <h3 style="font-size: 22px;">Controls</h3>
+                      <p>Touch Interaction on iOS vs. Remote Control on tvOS:</p>
+                      <ul>
+                        <li>
+                          <strong>iOS (Touch):</strong>
+                          <p style="margin-top: 0px; margin-bottom: 10px;">iOS devices rely heavily on touch interactions. Users interact with the screen using gestures like tapping, swiping, pinching, and dragging.</p>
+                        </li>
+                        <li>
+                          <strong>tvOS (Remote control)</strong>
+                          <p style="margin-top: 0px; margin-bottom: 30px;">Apple TV uses a physical remote control (or the Apple TV app on iOS devices) for navigation. The remote includes a touch-sensitive surface for swiping, clicking, and navigating.</p>
+                        </li>
+                      </ul>
+
+                      <div class="blog-post-image">
+                        <img src="images/image_3.png" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 50%;">
+                   </div>
+
+                   <p>When the user presses any of the controls on the TV remote, the <span class="in-function-name"> pressesBegan</span> function is triggered. By utilizing the <span class="in-function-name">UIPress.PressType</span> enum, we can detect which control is selected and handle the corresponding action.</p>
+
+                   <pre>
+                    <code>
+override func <span class="function-name">pressesBegan</span>(_ presses: Set&lt;UIPress&gt;, with event: UIPressesEvent?) {
+    super.pressesBegan(presses, with: event)
+    
+    for press in presses {
+        switch press.type {
+        case .select:
+            // handle select button
+        case .rightArrow:
+            // handle right arrow button
+        case .leftArrow:
+            // handle left arrow button
+        case .upArrow:
+            // handle up arrow button
+        case .downArrow:
+            // handle down arrow button
+        default:
+            break
+        }
+    }
+}
+</code>
+</pre>
+
+<p>Additional functions for managing press events on the remote include:</p>
+<pre>
+<code>
+func <span class="function-name">pressesEnded</span>(_ presses: Set<UIPress>, with event: UIPressesEvent?)
+func <span class="function-name">pressesChanged</span>(_ presses: Set<UIPress>, with event: UIPressesEvent?)
+func <span class="function-name">pressesCancelled</span>(_ presses: Set<UIPress>, with event: UIPressesEvent?)
+</code>
+</pre>
+                        <h3 style="font-size: 22px;">Button states</h3>
+                        <p>Buttons in tvOS have three key states:</p>
+                        <ol>
+                            <li>
+                              <strong>Normal</strong><br>
+                              The default state of a button.
+                            </li>
+                            <li>
+                              <strong>Highlighted</strong><br>
+                              Activated in response to user interaction, visually standing out to signify engagement.
+                            </li>
+                            <li>
+                                <strong>Focused</strong><br>
+                                Indicates the button has received focus, typically through navigation or user input.
+                              </li>
+                          </ol>
+
+                          <p>The button state can change to any of these states as the user navigates through the app.</p>
+
+                          <div class="blog-post-image">
+                            <img src="images/example_gif_1.gif" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+                          </div>
+
+                       <p>We can update the button background when its state changes. One way to achieve this is by extending the <span class="in-function-name">UIButton</span> class and adding functionality to handle focused, highlighted, and normal colors.</p>
+<pre>
+<code>
+extension <span class="function-name">UIButton</span> {
+
+    func <span class="function-name">setNormalColor</span>(_ color: UIColor) {
+        let image = UIImage.imageWithColor(color)
+        setBackgroundImage(image, for: .normal)
+    }
+    
+    func <span class="function-name">setFocusedColor</span>(_ color: UIColor) {
+        let image = UIImage.imageWithColor(color)
+        setBackgroundImage(image, for: .focused)
+    }
+    
+    func <span class="function-name">setHighlightedColor</span>(_ color: UIColor) {
+        let image = UIImage.imageWithColor(color)
+        setBackgroundImage(image, for: .highlighted)
+    }
+    
+}
+</code>
+</pre>
+
+                    <p>The function <span class="in-function-name">imageWithColor(_ color: UIColor)</span> is used to create a solid color image that matches the desired color, and then this image is set as the background for different states of a UIButton.</p>
+
+                    <p>After extending the <span class="in-function-name">UIButton</span> class, the button's background color, based on its state, can be set as follows:</p>
+<pre>
+<code>
+button.<span class="function-name">setHighlightedColor</span>(.white)
+button.<span class="function-name">setNormalColor</span>(.blue)
+button.<span class="function-name">setFocusedColor</span>(.red)
+</code>
+</pre>
+
+                    <p>For better customization of button properties such as <strong>fonts, title color, and size</strong> when the state changes, creating a custom UIButton extension offers a straightforward solution.</p>
+<pre>
+<code>
+class FocusedButton: <span class="function-name">UIButton</span> {
+
+    override var <span class="function-name">isHighlighted</span>: Bool {
+        didSet {
+            if isHighlighted {
+                // handle highlighted state
+            } else {
+                if isFocused {
+                    // Handle highlighted and focused state
+                } else {
+                    // Handle normal state
+                }
+            }
+        }
+    }    
+</code>
+</pre>
+
+                    <p>Additionally, we can handle the case when the button becomes focused.</p>
+
+<pre>
+<code>
+override func <span class="function-name">didUpdateFocus</span>(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+    if context.nextFocusedView == self {
+        // handle focused state
+    }
+    
+    if context.previouslyFocusedView == self {
+        // handle the case when the button loses focus.
+    }
+}
+</code>
+</pre>
+
+                    <p>In tvOS development, <strong>focus</strong> plays a crucial role in guiding users with a remote control, setting it apart from iOS where touch inputs play a major role. The next section of this blog will explore focus, addressing potential challenges in handling focus changes.</p>
+
+                    <h3>Focus Engine</h3>
+                    <p>These elements can become focused:</p>
+                    <ul>
+                        <li>
+                            UIButton
+                        </li>
+                        <li>
+                            UIControl
+                        </li>
+                        <li>
+                            UISegmentedControl
+                        </li>
+                        <li>
+                            UITabBar
+                        </li>
+                        <li>
+                            UITextField
+                        </li>
+                        <li>
+                            UISearchBar (with the internal text field being focusable)
+                        </li>
+                      </ul>
+
+                      <p>Exceptions include UICollectionViewCell and UITableViewCell, where focusability is determined by the delegate functions <span class="in-function-name">collectionView(_:canFocusItemAtIndexPath:)</span> and <span class="in-function-name">tableView(_:canFocusRowAtIndexPath:).</span></p>
+
+                      <h3 style="font-size: 22px;">Handle focus change manually</h3>
+
+                      <p>It is easy to navigate through focusable views when they are aligned horizontally and vertically. This works automatically. Focus is also automatically managed in both <span class="in-function-name">UICollectionView</span> and <span class="in-function-name">UITableView</span>. However, if you place a focusable view on a <strong>diagonal</strong> path, it will not become focused when navigating to it using the remote.</p>
+
+                      <p>As illustrated in the example below, the button to the right of the remote is not horizontally aligned with the currently focused button. Consequently, a right swipe on the remote will not shift the <strong>focus</strong> from the currently selected item to the item on the right side of the remote.</p>
+
+                      <div class="blog-post-image">
+                        <img src="images/example_gif_2.gif" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+                      </div>
+
+                      <p><span class="in-function-name">UIFocusGuide</span> can assist us in addressing the challenge of manually changing focus for diagonally aligned views.</p>
+                        
+                      <p>In the example bellow, we have <strong>origin</strong> and <strong>destination</strong> buttons diagonally aligned, preventing automatic focus transition. To address this, we'll create a properly aligned <span class="in-function-name">UIFocusGuide</span>, acting as an invisible intermediary between the origin and destination. This guide will seamlessly propagate focus from the origin to the destination button.</p>
+
+                      <div class="blog-post-image">
+                        <img src="images/image_4.png" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+                      </div>
+                    
+                      <p><p>Apple <a href="https://developer.apple.com/documentation/uikit/uifocusguide" target="_blank" style="text-decoration: underline !important;">documented</a> a perfect description of what UIFocusGuide is responsible for:</p></p>
+                      <blockquote>
+                        <p>UIFocusGuide represents an invisible, focusable region that can redirect focus movement to other views.</p>
+                    </blockquote>
+
+                    <p>The latest problem we encountered was changing focus from the left origin button to the right destination button, which is diagonally aligned. Let's break down the solution to this problem into four steps:</p>
+                    <ol>
+                        <li>
+                          <strong>Initialize UIFocusGuide.</strong><br>
+                          <p style="margin-top: 0px; margin-bottom: 10px;">let focusGuide = <span class="in-function-name">UIFocusGuide()</span></p>
+                        </li>
+                        <li>
+                          <strong>Add UIFocusGuide to the root view.</strong><br>
+                          <p style="margin-top: 0px; margin-bottom: 10px;">view.<span class="in-function-name">addLayoutGuide</span>(focusGuide)</p>
+                        </li>
+                        <li>
+                            <strong>Set the destination where the guide will redirect focus.</strong><br>
+                            <p style="margin-top: 0px; margin-bottom: 10px;">focusGuide.<span class="in-function-name">preferredFocusEnvironments</span> = destinations</p>
+                          </li>
+                        <li>
+                            <strong>Set constraints to ensure the focus guide is horizontally aligned with the origin view.</strong><br>
+                            <p style="margin-top: 0px; margin-bottom: 0px;">focusGuide.topAnchor.constraint(equalTo: origin.topAnchor).isActive = true</p>
+                            <p style="margin-top: 0px; margin-bottom: 30px;">focusGuide.leftAnchor.constraint(equalTo: origin.rightAnchor, constant: 20).isActive = true</p>
+                        </li>
+                    </ol>
+
+                    <p>With this approach, we've handled focus changes in one direction. However, in the app, there might be multiple instances of button focus changes that we wish to manage manually. For each case, we would need to <strong>rewrite</strong> similar code every time. To streamline this process, we can extend the UIViewController with a <strong>reusable</strong> function called <span class="in-function-name">addFocusGuide()</span>. This function will take the origin view, destination view, and the desired direction for handling focus changes.</p>
+
+<pre>
+<code>
+@discardableResult
+func <span class="in-function-name">addFocusGuide</span>(from origin: UIView, to destination: UIView, direction: UIRectEdge) -> UIFocusGuide {
+    let focusGuide = <span class="in-function-name">UIFocusGuide()</span>
+    view.addLayoutGuide(focusGuide)
+    focusGuide.preferredFocusEnvironments = [destination]
+    focusGuide.widthAnchor.<span class="in-function-name">constraint</span>(equalTo: origin.widthAnchor).isActive = true
+    focusGuide.heightAnchor.<span class="in-function-name">constraint</span>(equalTo: origin.heightAnchor).isActive = true
+
+    switch direction {
+    case .bottom:
+        focusGuide.topAnchor.<span class="in-function-name">constraint</span>(equalTo: origin.bottomAnchor, constant: -20).isActive = true
+        focusGuide.leftAnchor.<span class="in-function-name">constraint</span>(equalTo: origin.leftAnchor).isActive = true
+    case .top:
+        focusGuide.bottomAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.topAnchor, constant: 20).isActive = true
+        focusGuide.leftAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.leftAnchor).isActive = true
+    case .left:
+        focusGuide.topAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.topAnchor).isActive = true
+        focusGuide.rightAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.leftAnchor, constant: -20).isActive = true
+    case .right:
+        focusGuide.topAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.topAnchor).isActive = true
+        focusGuide.leftAnchor..<span class="in-function-name">constraint</span>(equalTo: origin.rightAnchor, constant: 20).isActive = true
+    default:
+        break
+    }
+
+    return focusGuide
+}
+</code>
+</pre>
+
+<p>To position the focus guide next to the origin button, we use the right direction:</p>
+<pre>
+<code>
+<span class="function-name">addFocusGuide</span>(from: originButton, to: destinationButton, direction: .right)
+</code>
+</pre>
+
+
+<p>To bring the focus back to the origin button, we need to implement focus direction in both ways:</p>
+<pre>
+<code>
+<span class="function-name">addFocusGuide</span>(from: destinationButton, to: originButton, direction: .left)
+</code>
+</pre>
+
+<p>There is one <strong>issue</strong> that I found while implementing <span class="in-function-name">UIFocusGuide</span>. In the <span class="in-function-name">addFocusGuide()</span> function, you can see that I included a constant with a value of 20 for both vertical and horizontal constraints. The purpose of this is to ensure that the frame of the <span class="in-function-name">UIFocusGuide</span> does not <strong>overlap</strong> with the frame of the origin view. If such overlap occurs, it can disrupt the proper functioning of the focus.</p>
+<p>When we create UIFocusGuides that handle both directions and do not overlap with the origin frame, everything should work as expected.</p>
+
+
+<div class="blog-post-image">
+    <img src="images/example_gif_3.gif" class="img-responsive imageRounded" alt="Blog Image 3" style="width: 100%;">
+  </div>
+
+
+
+    <p>In the example above, you can see <span class="in-function-name">UIFocusGuide</span> represented by the green rectangle. However, it's important to note that <span class="in-function-name">UIFocusGuide</span> is <strong>invisible</strong>. For visualization purposes, I utilized the layout frame of <span class="in-function-name">UIFocusGuide</span> and rendered a view at the same location. This view is named <span class="in-function-name">FocusGuideView</span>, and it is initialized inside our <span class="in-function-name">addFocusGuide()</span> function when needed. You can see the full implementation <a href="https://github.com/bozidarlabas/tvOSBlog/blob/development/tvOSApp/App/UIExtensions/UIViewController%2BFocusGuide.swift" target="_blank" style="text-decoration: underline !important;">here</a>.</p> 
+
+
+<pre>
+<code>
+class FocusGuideView: <span class="function-name">UIView</span> {
+
+    init(focusGuide: <span class="function-name">UIFocusGuide</span>) {
+        super.init(frame: focusGuide.layoutFrame)
+        backgroundColor = UIColor.green.<span class="function-name">withAlphaComponent</span>(0.15)
+        layer.borderColor = UIColor.green.<span class="function-name">withAlphaComponent</span>(0.3).cgColor
+        layer.borderWidth = 1
+    }
+
+    required init?(coder aDecoder: <span class="function-name">NSCoder</span>) {
+        return nil
+    }
+}  
+</code>
+</pre>
+
+                    <p>If you want to render <span class="in-function-name">UUIFocusGuide</span> for debugging purposes, you can do this by setting the <strong>debugMode</strong> property to true.</p>
+<pre>
+<code>
+<span class="function-name">addFocusGuide</span>(from: originButton, to: destinationButton, direction: .right, debugMode: true)
+</code>
+</pre>
+
+                <h3>tvOS restrictions</h3>
+                <p>There are 3 tvOS restrictions that I found:</p>
+                <ol>
+                    <li>
+                      <strong>Maximum size for a tvOS app.</strong>
+                      <p style="margin-top: 0px; margin-bottom: 10px;">As stated in the <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppleTV_PG/OnDemandResources.html#:~:text=The%20maximum%20size%20for%20a,them%20to%20the%20required%20resources." target="_blank" style="text-decoration: underline !important;">Apple documentation</a>, the maximum size for a tvOS app bundle is 4 GB. However, using tags and on-demand resources, your app can add another 20 GB of resources to a running app.</p>
+                    </li>
+                    <li>
+                      <strong>Local storage is limited .</strong>
+                      <p style="margin-top: 0px; margin-bottom: 10px;"> Apple <a href="https://developer.apple.com/library/archive/documentation/General/Conceptual/AppleTV_PG/" target="_blank" style="text-decoration: underline !important;">mentioned</a> that a tvOS app can only access 500 KB of persistent storage local to the device using the <a href="https://developer.apple.com/documentation/foundation/nsuserdefaults" target="_blank" style="text-decoration: underline !important;">NSUserDefaults</a> class. However, the app can store and retrieve user data in iCloud.</p>
+                    <li>
+                        <strong>WebView doesn't exist in tvOS.</strong>
+                      </li>
+                </ol>
+
+                <h3>Recap</h3>
+
+                <p>You can find finished examples that you followed throughout this post <a href="https://github.com/bozidarlabas/tvOSBlog" target="_blank" style="text-decoration: underline !important;">here</a>.</p>
+                <p>We learned that tvOS app development is not difficult if you already have some knowledge in <strong>Swift and UIKit (or SwiftUI)</strong>. When users interact with the app using the TV remote, views change state, allowing us to update the UI based on this state through the available <span class="function-name">presses</span> functions. For <strong>diagonally aligned</strong> views, we need to use <span class="function-name">UIFocusGuide</span> to handle focus change.</p> 
+                <p>Additionally, you found out that tvOS has some restrictions that we need to consider before implementing the app.</p>
+                <p>I hope you enjoyed reading and found something valuable to use in your tvOS project.</p>
+
+
+
+                    </div>
+                         
+                         
+
+                         <!-- <div class="blog-single-post-image">
+                              <div class="col-md-4 col-sm-4">
+                                   <img src="images/blog-image1.jpg" class="img-responsive imageRounded" alt="Blog Image 1">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <img src="images/blog-image2.jpg" class="img-responsive imageRounded" alt="Blog Image 2">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <img src="images/blog-image3.jpg" class="img-responsive imageRounded" alt="Blog Image 3">
+                              </div>
+                         </div>
+                         <p>Aliquam blandit velit nisi, sed fringilla felis lacinia sed. Integer vitae porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus non tristique lacus. Suspendisse ut tortor vitae risus lacinia tristique. Aliquam sed consectetur libero.</p>
+
+                         <div class="blog-author">
+                              <div class="media">
+                                   <div class="media-object pull-left">
+                                        <img src="images/author-image1.jpg" class="img-circle img-responsive imageRounded" alt="blog">
+                                   </div>
+                                   <div class="media-body">
+                                        <h3 class="media-heading"><a href="#">Jen Lopez ( Designer )</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                   </div>
+                              </div>
+                         </div> -->
+
+                         <!-- <div class="blog-comment">
+                              <h3>Comments</h3>
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <img src="images/comment-image1.jpg" class="img-responsive img-circle" alt="Blog Image 11">
+                                        </div>
+                                        <div class="media-body">
+                                             <h3 class="media-heading">David Jones</h3>
+                                             <span>3 days ago</span>
+                                             <p>Aliquam gravida arcu at risus blandit, in interdum metus varius. Cras efficitur, ex sit amet tincidunt rhoncus, dui ex hendrerit risus, ac dapibus ligula mi id leo. In auctor dui justo, ac consequat dui posuere ac.</p>
+                                        </div>
+                                   </div>
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <img src="images/comment-image2.jpg" class="img-responsive img-circle" alt="Blog Image 22">
+                                        </div>
+                                        <div class="media-body">
+                                             <h3 class="media-heading">Omar Larus</h3>
+                                             <span>5 days ago</span>
+                                             <p>Maecenas ultricies ante dignissim, iaculis ligula sed, gravida ipsum. Pellentesque lobortis velit mi, sed volutpat enim facilisis.</p>
+                                        </div>
+                                   </div>
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <img src="images/author-image2.jpg" class="img-responsive img-circle" alt="Blog Image 33">
+                                        </div>
+                                        <div class="media-body">
+                                             <h3 class="media-heading">Walker Jen</h3>
+                                             <span>July 27, 2017</span>
+                                             <p>In eu posuere nulla, sit amet semper lectus. Aliquam gravida arcu at risus blandit, in interdum metus varius. Cras efficitur, ex sit amet tincidunt rhoncus, dui ex hendrerit risus, ac dapibus ligula mi id leo.</p>
+                                        </div>
+                                   </div>
+                                   <div class="media">
+                                        <div class="media-object pull-left">
+                                             <img src="images/author-image1.jpg" class="img-responsive img-circle" alt="Blog Image 44">
+                                        </div>
+                                        <div class="media-body">
+                                             <h3 class="media-heading">Jen Lopez</h3>
+                                             <span>July 24, 2017</span>
+                                             <p>In auctor dui justo, ac consequat dui posuere ac. Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque, curabitur.</p>
+                                        </div>
+                                   </div>
+                         </div> -->
+
+                         <!-- <div class="blog-comment-form">
+                              <h3>Leave a Comment</h3>
+                                   <form action="#" method="post">
+                           	 	 	 	<input type="text" class="form-control" placeholder="Name" name="name" required>
+                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                        <textarea name="message" rows="5" class="form-control" id="message" placeholder="Message" message="message" required="required"></textarea>
+                                        <div class="col-md-3 col-sm-4">
+                                             <input name="submit" type="submit" class="form-control" id="submit" value="Post Your Comment">
+                                        </div>
+                                   </form>
+                         </div> -->
+                    </div>
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+<!-- 
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Neuron Studio</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2017 Your Company - Design: Tooplate</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> 512 Delicious Street, San Francisco, CA 10880</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> info@company.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer> -->
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

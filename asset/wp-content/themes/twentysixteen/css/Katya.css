@@ -1,0 +1,338 @@
+
+/*background-image*/
+.page-template-projects #runon .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-white.png) #f7f7f8;
+	color:#FFFFFF;
+	background-size: 100%;
+}#industries
+.page-template-projects #halsaLife .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-halsa.png) #f2f3fa;
+	color:#383841;
+	background-size: 100%;
+}
+.page-template-projects #ardarts .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-ardarts.png) #272637;
+	color:#FFFFFF;
+	background-size: 100%;
+}
+.page-template-projects #ground-central .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-gc.png) #24252c;
+	color:#383841;
+	background-size: 100%;
+}
+.page-template-projects #reefill .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-white.png) #f7f7f8;
+	color:#FFFFFF;
+	background-size: 100%;
+}
+.page-template-projects #cakemix .section_bg{
+	background:url(https://messapps.com/wp-content/themes/twentysixteen/images/newDesign/bg-white.png) #f7f7f8;
+	color:#383841;
+	background-size: 100%;
+}
+.page-template-projects .section_bg{
+    pointer-events: none;
+}
+/*background-image*/
+
+
+
+.page-template-projects.section-header .inner_left_section,
+.page-template-projects.section-header .link_to_project a,
+.page-template-projects.section-header .nav-main a,
+.page-template-projects.section-header .header-logo{
+	color:#FFFFFF;
+}
+
+.page-template-projects.section-ardarts .inner_left_section,
+.page-template-projects.section-ardarts .link_to_project a,
+.page-template-projects.section-ardarts .nav-main a,
+.page-template-projects.section-ardarts .header-logo{
+	color:#FFFFFF;
+	transition: color 0.5s linear;
+}
+.page-template-projects.section-ardarts .header-logo:before{
+	    background-image: url(../samples/logo-icon-white.svg);
+}
+.page-template-projects.section-ardarts .link_to_project a:before{
+	background-color: #FFFFFF;
+}
+.page-template-projects.section-ardarts .link_to_project a:after{
+	background: linear-gradient( to top left,#FFFFFF 50%,#ffffff00 50%);
+}
+
+.page-template-projects.section-ground-central .inner_left_section,
+.page-template-projects.section-ground-central .link_to_project a,
+.page-template-projects.section-ground-central .nav-main a,
+.page-template-projects.section-ground-central .header-logo{
+	color:#FFFFFF;
+	transition: color 0.5s linear;
+}
+.page-template-projects.section-ground-central .header-logo:before{
+	    background-image: url(../samples/logo-icon-white.svg);
+}
+.page-template-projects.section-ground-central .link_to_project a:before{
+	background-color: #FFFFFF;
+}
+.page-template-projects.section-ground-central .link_to_project a:after{
+	background: linear-gradient( to top left,#FFFFFF 50%,#ffffff00 50%);
+}
+
+
+/*Industies*/
+#industries .tm_pb_row{
+	max-width: 100%;
+}
+#industries #tm_builder_outer_content  img{
+	height: auto;
+	width: auto;
+}
+#industries hr{
+	  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E2E2E6;
+    margin: 1em 0;
+    padding: 0;
+}
+#industries{
+	    padding-top: 4.8125rem;
+    margin-top: -4.8125rem;
+    /*background: #f6f6f7;*/
+}
+#industries h1,
+#industries .h1{
+	color: #383841;	font-family: "Proxima Nova";	font-size: 88px;	font-weight: 800;	letter-spacing: 0.4px;	line-height: 88px;
+	margin-bottom: 12px;
+}
+
+#industries h2,
+#industries .h2{
+	color: #383841;	font-family: "Proxima Nova";	font-size: 56px; font-weight: normal;	letter-spacing: -0.2px; line-height: 58px;
+	margin-bottom: 6px;
+}
+#industries h3,
+#industries .h3{
+	color: #383841;	font-family: "Proxima Nova"; font-weight: normal;	font-size: 40px;	letter-spacing: -0.2px;	line-height: 46px;
+	margin-bottom: 8px;
+}
+#industries h4,
+#industries .h4{
+		color: #383841;	font-family: "Proxima Nova";	font-size: 24px;	font-weight: bold;	letter-spacing: 0.4px;	line-height: 30px; margin-bottom: 4px;
+}
+
+#industries p,
+#industries .p{
+	color: #383841;	font-family: "Proxima Nova";	font-size: 20px;	letter-spacing: 0.4px;	line-height: 28px;
+}
+#industries b{
+	font-weight: bold;
+}
+#industries .b{
+		font-size: 24px;	letter-spacing: 0.4px;	line-height: 32px;
+}
+#industries .small{
+		font-size: 16px;	letter-spacing: 0.2px;	line-height: 24px;
+}
+#industries .s{
+	font-weight: 600;
+}
+#industries .button.purple{
+	border-radius: 8px;	background: linear-gradient(281.35deg, #55307B 0%, #9D82B6 100%);	/*box-shadow: inset 0 -13px 6px 0 rgba(169,169,169,0.24);*/
+		color: #FFFFFF;	font-family: "Proxima Nova";	font-size: 16px;	font-weight: bold;	letter-spacing: 0.2px;	line-height: 18px;	text-align: center;
+		padding: 15px; min-width: 171px; display: inline-block;
+}
+#industries .button.white{
+	border: 1px solid #E2E1E4;	border-radius: 8px;	background-color: rgba(255,255,255,0.5);
+	min-width: 177px;	color: #383841;	font-family: "Proxima Nova";	font-size: 16px;	font-weight: bold;	letter-spacing: 0.2px;	line-height: 24px;	text-align: center; display: inline-block; padding: 8px; margin-top: 24px;
+}
+#industries .main_section img{
+	margin-bottom: 40px;
+}
+#industries .section{
+	padding: 110px 0;
+}
+#industries .details-section hr{
+	margin: 32px 0;
+}
+#industries .details-section img{
+	margin: 40px 0 20px -85px;
+}
+#industries .text-center{
+	text-align: center;
+}
+#industries .main_section img{
+	margin-bottom: 40px;
+}
+#industries .border-blocks{
+padding: 8px;
+}
+#industries .border-blocks-inner{
+		border: 1px solid #E2E1E4;	border-radius: 8px;	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	padding: 25px 0;
+}
+#industries .border-blocks-inner.shadow{
+	border: none;
+		box-shadow: 0 20px 20px 0 rgba(0,0,0,0.04);
+}
+#industries .border-blocks-inner p{
+	margin-bottom: 0;
+}
+#industries .border-blocks-inner img{
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+#industries .section{
+	padding: 110px 0;
+}
+#industries .middle_block_wrap{
+	position: relative;
+}
+/*#industries .middle_block{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 555px;
+}*/
+#industries .middle_block:after{
+	content: '';
+	clear:both;
+}
+#industries .selected_text{
+	margin-bottom: 30px;
+}
+#industries .selected_text .text_block{
+	padding: 25px;
+	border-radius: 8px;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #E2E1E400;
+	margin: 7px 0;
+	opacity: 0.32;
+}
+#industries .selected_text .text_block:hover{
+border: 1px solid #E2E1E4;
+opacity: 1;
+}
+#industries .industry_block_wrappers{
+	padding-top: 30px;
+}
+#industries .industry_block_wrap{
+	padding: 12px;
+}
+#industries .industry_block{
+	border-radius: 8px;	background-color: rgba(255,255,255,0.7);	box-shadow: 0 20px 20px 0 rgba(0,0,0,0.04);
+	min-height: 144px;
+}
+#industries .industry_block img{
+    display: inline-block;
+    margin: 16px 0px;
+    float: left;
+        max-height: 112px;
+}
+#industries .industry_block p{
+	padding-top: 42px;
+}
+
+#industries .tool_block_wrap{
+	padding: 15px;
+}
+#industries .tool_block{
+	border: 1px solid #E2E1E4;	border-radius: 8px;	background-color: rgba(255,255,255,0.5);
+	min-height: 81px;
+	text-align: center;
+}
+#industries .tool_block img{
+    display: inline-block;
+    margin: 16px 24px;
+}
+#industries .tool_block p{
+	margin-top: 25px;
+	display: inline-block;
+}
+#industries .small_blocks_section p.b.s{
+	padding-top: 25px;
+}
+#industries .details-section .details-margin{
+	margin: 32px 0;
+}
+#industries .details-section .details-img{
+	margin: 40px 0 20px -85px;
+}
+#industries .main_section{
+	padding-top: 0;
+}
+#industries  .four_images_section {
+	padding-bottom: 120px ;
+}
+#industries .simple_section {
+	padding: 100px 0;
+}
+#industries .select_bocks_section .select_block{
+	padding: 17px 10px;
+	text-align: center;
+}
+#industries .select_bocks_section .select_block .select_img{
+	min-height: 100px;
+}
+#industries .select_bocks_section .select_block p{
+	margin-top: 19px;
+}
+#industries .select_bocks_section h2{
+	margin-bottom: 28px;
+}
+#industries .select_bocks_section .select_block_wrappers{
+	padding: 28px;
+}
+#industries .select_bocks_section .select_block_result{
+	padding-top: 20px;
+}
+#industries .clear{
+	clear: both;
+}
+#industries .comments_section img{
+margin-bottom: 16px;
+}
+#industries .comment_block{
+	text-align: center;
+	margin: 32px 0;
+	padding-bottom: 32px;
+	border-bottom:1px solid #E2E2E6;
+}
+#industries .comments_bloks{
+	margin-top: 24px;
+}
+
+@media (max-width:992px) {
+
+	 #industries h1, #industries .h1 {
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    line-height: 39px;
+	}
+
+	#industries p {
+font-size: 19px;
+    letter-spacing: 0.4px;
+    line-height: 27px;
+
+}
+
+#industries h2, #industries .h2 {
+    color: #383841;
+    font-family: "Proxima Nova";
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: -0.2px;
+    line-height: 40px;
+    margin-bottom: 6px;
+}
+#industries .indbloksp {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+}
+/*Industies*/
+
