@@ -117,6 +117,11 @@ div.title-about-wrapper {
     color: #951d97;
     font-weight: 700;
 }
+
+.nav-main .test {
+    color: rgba(26, 26, 26, 0.6);
+}
+
 .ardarts-page .nav-main a:hover, .ardarts-page .nav-main li.current-menu-item.active a, .ardarts-page .nav-main li.current-menu-item a,
 .grc-page .nav-main a:hover, .grc-page .nav-main li.active a, .grc-page .nav-main li.current-menu-item a,
 .halsa-page .nav-main li.current-menu-item a, .halsa-page .nav-main a:hover, .halsa-page .nav-main li.current-menu-item.active a,

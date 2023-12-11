@@ -2329,46 +2329,6 @@ figure {
     cursor: pointer
 }
 
-/* @font-face {
-    font-family: Proxima Nova;
-    src: url(https://messapps.com/portfolio/../fonts/proximanovaregular.woff2) format("woff2"),url(https://messapps.com/portfolio/../fonts/proximanovaregular.woff) format("woff"),url(https://messapps.com/portfolio/../fonts/proximanovaregular.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: Proxima Nova;
-    src: url(https://messapps.com/portfolio/../fonts/proximanovalight.woff2) format("woff2"),url(https://messapps.com/portfolio/../fonts/proximanovalight.woff) format("woff"),url(https://messapps.com/portfolio/../fonts/proximanovalight.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: Proxima Nova;
-    src: url(https://messapps.com/portfolio/../fonts/proximanovabold.woff2) format("woff2"),url(https://messapps.com/portfolio/../fonts/proximanovabold.woff) format("woff"),url(https://messapps.com/portfolio/../fonts/proximanovabold.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: Proxima Nova;
-    src: url(https://messapps.com/portfolio/../fonts/proximanovaextrabold.woff2) format("woff2"),url(https://messapps.com/portfolio/../fonts/proximanovaextrabold.woff) format("woff"),url(https://messapps.com/portfolio/../fonts/proximanovaextrabold.ttf) format("truetype");
-    font-weight: 800;
-    font-style: normal;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: Proxima Nova;
-    src: url(https://messapps.com/portfolio/../fonts/proximanovablack.woff2) format("woff2"),url(https://messapps.com/portfolio/../fonts/proximanovablack.woff) format("woff"),url(https://messapps.com/portfolio/../fonts/proximanovablack.ttf) format("truetype");
-    font-weight: 900;
-    font-style: normal;
-    font-display: fallback;
-} */
-
 html {
     font-size: 16px
 }

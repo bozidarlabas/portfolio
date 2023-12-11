@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="neuron/css/style.css">
     <title>Bozidar Labas - Portfolio</title>
   </head>
@@ -16,33 +17,70 @@
  </div>
     <!-- <div id="overlay2" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999999;" class="bg-gradient-to-br from-gray-800 to-indigo-900"></div> -->
 
-    <div id="page" class="wrapper">
+    <!-- <div id="page" class="wrapper">
       <div class="wrapper-in">
         <div class="header-wrapper mobile--large" style="height: 0px" id="header">
-          <!-- .header -->
           <header class="header header--fixed">
             <div class="container">
               <nav id="site-navigation" class="main-navigation nav-main fade-in-element3" aria-label="Primary Menu">
                 <div class="menu-general-container">
                   <ul id="menu-general" class="list--inline">
                     <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item menu-item-18">
-                      <!-- <a href="#first_project">Projects</a> -->
                       <a class="scroll-link" id="scrollToTarget" style="cursor: pointer;">Projects</a>
                     </li>
                     <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
                       <a href="neuron/index.html">Blogs</a>
                     </li>
-                    <!-- https://messapps.com/blog/ -->
+                    <li><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook test" style="font-size: 30px;"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank" class="fa fa-twitter test" style="font-size: 30px;"></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin test" style="font-size: 30px;"></a></li>
+
                   </ul>
                 </div>
               </nav>
             </div>
           </header>
-          <!-- /.header -->
+        </div> -->
+
+        <!-- <div class="floating-navigation container" style="display: flex; justify-content: flex-start; align-items: center;">
+          <ul id="menu-general" class="list--inline">
+            <li><a class="scroll-link" id="scrollToTarget" style="cursor: pointer;">Projects</a></li>
+            <li><a href="neuron/index.html">Blogs</a></li>
+            <li><a href="https://www.facebook.com" target="_blank" class="fa fa-facebook test" style="font-size: 30px;"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank" class="fa fa-twitter test" style="font-size: 30px;"></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin test" style="font-size: 30px;"></a></li>
+          </ul>
+        </div> -->
+
+        <div class="navbar navbar-default floating-navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <ul id="menu-general" class="list--inline">
+                  <li><a class="scroll-link" id="scrollToTarget" style="cursor: pointer;">Projects</a></li>
+                  <li><a href="neuron/index.html">Blogs</a></li>
+                </ul>
+                <ul class="list--inline">
+                  <li><a href="https://github.com/bozidarlabas" target="_blank" class="fa fa-github" style="font-size: 30px;"></a></li>
+                  <li><a href="https://www.linkedin.com/in/bozidarlabas/" target="_blank" class="fa fa-linkedin" style="font-size: 30px;"></a></li>
+                  <li><a href="https://twitter.com/_Bozinho_" target="_blank" class="fa fa-twitter" style="font-size: 30px;"></a></li>
+                  <li>
+                    <a href="https://app.codesignal.com/profile/bozidarlabas" target="_blank">
+                      <img src="assets/img/code_signal.png" style="width: 30px; height: 30px;">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        
+      
+
         <div id="content" class="site-content">
 									<!-- .content -->
-									<main class=" content">
+									<main class=" content" style="padding-top: 0px;">
           <!-- page -->
           <div data-page="projects" id="projects">
             <section class="page_section" id="my_portfolio" data-section="ardarts">
@@ -60,6 +98,14 @@
                 <div class="css-nycvui">
                   <h2 style="position: relative; z-index: 10;" class="text-white font-semibold z-10 mt-4 text-3xl fade-in-element2">Mobile app developer</h2>
                 </div>
+                <!-- <div class="col-md-12 col-sm-12" style="margin-top: 10px;">
+                  <ul class="social-icon" style="color: white;">
+                    <li><a href="https://www.google.com" target="_blank" style="border: none;"><i style="font-size:30px;" class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.google.com" target="_blank" style="border: none;"><i style="font-size:30px;" class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.google.com" target="_blank" style="border: none;"><i style="font-size:30px;" class="fa fa-linkedin"></i></a></li>
+                  </ul>
+              </div> -->
+              <!-- style="font-size:48px;" -->
                 <div class="absolute bottom-10 left-0 right-0  flex justify-center fade-in-element3">
                   <button class="focus:outline-none" onclick="scrollToElement('first_project')">
                     <svg class="w-12 h-12 text-white animate-bounce" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -367,6 +413,12 @@ function scrollToElement(elementId) {
           const analytics = getAnalytics(app);
         </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    firebase.analytics().logEvent('page_home', { page_path: window.location.pathname });
+  });
+</script>
+
           <div id="overlay"></div>
 
           <style>
@@ -381,7 +433,57 @@ function scrollToElement(elementId) {
                 display: none; /* Hide initially */
                 z-index: 1000; /* Make sure it's above other elements */
             }
+
+            .fa {
+                color: white;
+            }
         </style>
+
+<style>
+  /* Style for the floating navigation */
+  .floating-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0); /* Adjust the background color and opacity as needed */
+    z-index: 1000;
+    padding: 10px; /* Adjust the padding as needed */
+    transition: top 0.3s; /* Add smooth transition for the top property */
+  }
+
+  .floating-navigation ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .floating-navigation li {
+    margin-right: 20px; /* Adjust the spacing between menu items */
+  }
+
+  .floating-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  .list--inline li a {
+    cursor: pointer !important; /* Add !important to prioritize this style */
+  }
+</style>
+
+<script>
+  // Add a script to hide/show the floating navigation on scroll
+  var floatingNavigation = document.querySelector('.floating-navigation');
+
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    if (window.scrollY > windowHeight / 3) {
+      floatingNavigation.style.top = '-100px';
+    } else {
+      floatingNavigation.style.top = '0';
+    }
+  });
+</script>
         
   </body>
 </html>
