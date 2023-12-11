@@ -422,7 +422,7 @@ function scrollToElement(elementId) {
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    firebase.analytics().logEvent('page_home', { page_path: window.location.pathname });
+    analytics.logEvent('page_home', { page_path: window.location.pathname });
   });
 </script>
 
@@ -496,7 +496,7 @@ function scrollToElement(elementId) {
   $(document).ready(function () {
     $('#github-link, #linkedin-link, #twitter-link, #codesignal-link, #news_app_id, #finance_flow_id, #beat_sync_id').click(function () {
       var linkId = $(this).attr('id');
-      firebase.analytics().logEvent('click', { item_id: linkId });
+      analytics.logEvent('click', { item_id: linkId });
     });
   });
 </script>

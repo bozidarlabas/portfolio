@@ -690,12 +690,15 @@ class FocusGuideView: <span class="function-name">UIView</span> {
 
 <!-- SCRIPTS -->
 
-<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script> -->
 
 <script>
+    import { getAnalytics, logEvent } from "firebase/analytics";
+     const analytics = getAnalytics();
+
     document.addEventListener('DOMContentLoaded', function () {
-      firebase.analytics().logEvent('page_blog_tvOS', { page_path: window.location.pathname });
+        analytics.logEvent('page_blog_tvOS', { page_path: window.location.pathname });
     });
   </script>
 

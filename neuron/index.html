@@ -150,12 +150,15 @@
 
 <!-- SCRIPTS -->
 
-<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script> -->
 
 <script>
+     import { getAnalytics, logEvent } from "firebase/analytics";
+     const analytics = getAnalytics();
+
      document.addEventListener('DOMContentLoaded', function () {
-       firebase.analytics().logEvent('page_blog_list', { page_path: window.location.pathname });
+          analytics.logEvent('page_blog_list', { page_path: window.location.pathname });
      });
    </script>
 
@@ -164,7 +167,7 @@
      $(document).ready(function () {
        $('#blogSelected_tvOS').click(function () {
          var linkId = $(this).attr('id');
-         firebase.analytics().logEvent('click', { item_id: linkId });
+         analytics.logEvent('click', { item_id: linkId });
        });
      });
    </script>
