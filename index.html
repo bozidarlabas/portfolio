@@ -61,11 +61,11 @@
                   <li><a href="neuron/index.html">Blogs</a></li>
                 </ul>
                 <ul class="list--inline">
-                  <li><a href="https://github.com/bozidarlabas" target="_blank" class="fa fa-github" style="font-size: 30px;"></a></li>
-                  <li><a href="https://www.linkedin.com/in/bozidarlabas/" target="_blank" class="fa fa-linkedin" style="font-size: 30px;"></a></li>
-                  <li><a href="https://twitter.com/_Bozinho_" target="_blank" class="fa fa-twitter" style="font-size: 30px;"></a></li>
+                  <li><a href="https://github.com/bozidarlabas" target="_blank" class="fa fa-github" style="font-size: 30px;" id="github-link"></a></li>
+                  <li><a href="https://www.linkedin.com/in/bozidarlabas/" target="_blank" class="fa fa-linkedin" style="font-size: 30px;" id="linkedin-link"></a></li>
+                  <li><a href="https://twitter.com/_Bozinho_" target="_blank" class="fa fa-twitter" style="font-size: 30px;" id="twitter-link"></a></li>
                   <li>
-                    <a href="https://app.codesignal.com/profile/bozidarlabas" target="_blank">
+                    <a href="https://app.codesignal.com/profile/bozidarlabas" target="_blank" id="codesignal-link">
                       <img src="assets/img/code_signal.png" style="width: 30px; height: 30px;">
                     </a>
                   </li>
@@ -74,6 +74,13 @@
             </div>
           </div>
         </div>
+
+        <!-- <li><a href="https://github.com/bozidarlabas" target="_blank" class="fa fa-github" id="github-link"></a></li>
+        <li><a href="https://www.linkedin.com/in/bozidarlabas/" target="_blank" class="fa fa-linkedin" id="linkedin-link"></a></li>
+        <li><a href="https://twitter.com/_Bozinho_" target="_blank" class="fa fa-twitter" id="twitter-link"></a></li>
+        <li><a href="https://app.codesignal.com/profile/bozidarlabas" target="_blank" id="codesignal-link">
+            <img src="assets/img/code_signal.png" style="width: 30px; height: 30px;">
+        </a></li> -->
         
         
       
@@ -135,7 +142,7 @@
                             </ul>
                           </div>
                           <div class="link_to_project">
-                            <a href="">VIEW PROJECT</a>
+                            <a id="finance_flow_id" href="">VIEW PROJECT</a>
                           </div>
                         </div>
                       </div>
@@ -175,7 +182,7 @@
                             </ul>
                           </div>
                           <div class="link_to_project">
-                            <a href="https://github.com/bozidarlabas/BeatSync" target="_blank">VIEW PROJECT</a>
+                            <a id="beat_sync_id" href="https://github.com/bozidarlabas/BeatSync" target="_blank">VIEW PROJECT</a>
                           </div>
                         </div>
                       </div>
@@ -220,7 +227,7 @@
                             </ul>
                           </div>
                           <div class="link_to_project">
-                            <a href="https://github.com/bozidarlabas/news-app" target="_blank">VIEW PROJECT</a>
+                            <a id="news_app_id" href="https://github.com/bozidarlabas/news-app" target="_blank">VIEW PROJECT</a>
                           </div>
                         </div>
                       </div>
@@ -482,6 +489,15 @@ function scrollToElement(elementId) {
     } else {
       floatingNavigation.style.top = '0';
     }
+  });
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('#github-link, #linkedin-link, #twitter-link, #codesignal-link, #news_app_id, #finance_flow_id, #beat_sync_id').click(function () {
+      var linkId = $(this).attr('id');
+      firebase.analytics().logEvent('click', { item_id: linkId });
+    });
   });
 </script>
         

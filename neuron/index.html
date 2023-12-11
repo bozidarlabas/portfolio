@@ -87,7 +87,7 @@
                            </a>
                        </div>
                        <div class="blog-post-title">
-                           <h3><a href="tvOSBlogPost.html">tvOS tips and tricks</a></h3>
+                           <h3><a id="blogSelected_tvOS" href="tvOSBlogPost.html">tvOS tips and tricks</a></h3>
                        </div>
                        <div class="blog-post-format">
                            <span>Božidar Labaš</span>
@@ -156,6 +156,16 @@
 <script>
      document.addEventListener('DOMContentLoaded', function () {
        firebase.analytics().logEvent('page_blog_list', { page_path: window.location.pathname });
+     });
+   </script>
+
+
+<script>
+     $(document).ready(function () {
+       $('#blogSelected_tvOS').click(function () {
+         var linkId = $(this).attr('id');
+         firebase.analytics().logEvent('click', { item_id: linkId });
+       });
      });
    </script>
 
