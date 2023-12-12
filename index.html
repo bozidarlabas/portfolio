@@ -434,7 +434,7 @@ function scrollToElement(elementId) {
             document.querySelectorAll('#github-link, #linkedin-link, #twitter-link, #codesignal-link, #news_app_id, #finance_flow_id, #beat_sync_id').forEach(function (element) {
               element.addEventListener('click', function () {
                 var linkId = this.id;
-                logEvent(analytics, '(home)-click' + linkId);
+                logEvent(analytics, '(home)-click_' + linkId);
               });
             });
           });
