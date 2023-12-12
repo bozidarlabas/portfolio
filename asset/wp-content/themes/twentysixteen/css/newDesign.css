@@ -133,13 +133,13 @@ background: linear-gradient(215.25deg, #FFFFFF 0%, #F5F5F6 100%) ;
 	background: rgba(255,255,255,0.5);
 	margin: 10px 0;*/
 	cursor: pointer;
-	background:url(/wp-content/themes/twentysixteen/images/newdesign/button-prev-active-on-white2x.png);
+	/* background:url(/wp-content/themes/twentysixteen/images/newdesign/button-prev-active-on-white2x.png); */
 	opacity: 0.8;
 	background-size: 100%;
 }
 [data-section="ardarts"] .section_arrows,
 [data-section="ground-central"] .section_arrows{
-		background:url(/wp-content/themes/twentysixteen/images/newdesign/button-next2x.png);
+		/* background:url(/wp-content/themes/twentysixteen/images/newdesign/button-next2x.png); */
 	background-size: 100%;
 }
 

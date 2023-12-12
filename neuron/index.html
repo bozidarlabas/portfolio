@@ -32,7 +32,7 @@
 
 <!-- Navigation section  -->
 
-<div class="navbar navbar-default navbar-static-top" role="navigation">
+<!-- <div class="navbar navbar-default navbar-static-top" role="navigation">
      <div class="container">
 
           <div class="navbar-header">
@@ -51,7 +51,18 @@
           </div>
 
   </div>
-</div>
+</div> -->
+
+<div class="navbar navbar-default floating-navigation" style="border-color: rgba(51, 51, 51, 0);">
+     <div class="container">
+       <div class="navbar-header">
+           <ul class="list--inline">
+               <li class="active"><a href="../index.html">Home</a></li>
+               <li class="active"><a href="index.html">Blogs</a></li>
+           </ul>
+       </div>
+     </div>
+   </div>
 
 <!-- Home Section -->
 
@@ -153,22 +164,84 @@
 <!-- <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js"></script> -->
 
-<script>
-     import { getAnalytics, logEvent } from "firebase/analytics";
-     const analytics = getAnalytics();
+<style>
+     /* Style for the floating navigation */
+     .floating-navigation {
+       position: fixed;
+       top: 0;
+       width: 100%;
+       background-color: rgba(51, 51, 51, 0); /* Adjust the background color and opacity as needed */
+       z-index: 1000;
+       padding: 10px; /* Adjust the padding as needed */
+       transition: top 0.3s; /* Add smooth transition for the top property */
+     }
+   
+     .floating-navigation ul {
+       list-style: none;
+       display: flex;
+     }
+   
+     .floating-navigation li {
+       margin-right: 20px; /* Adjust the spacing between menu items */
+     }
+   
+     .floating-navigation a {
+       color: white;
+       text-decoration: none;
+       font-size: 16px; /* Adjust the font size as needed */
+       font-weight: bold;
+     }
+     .list--inline li a {
+       cursor: pointer !important; /* Add !important to prioritize this style */
+     }
+   </style>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+          import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyB3UeJ5by1Fs03NnWph4v2oy9YVz4vImmc",
+            authDomain: "portfolio-859ec.firebaseapp.com",
+            projectId: "portfolio-859ec",
+            storageBucket: "portfolio-859ec.appspot.com",
+            messagingSenderId: "826483746638",
+            appId: "1:826483746638:web:90d318c3bb4d33459a601f",
+            measurementId: "G-1MFPJYGHB4"
+          };
+
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
 
      document.addEventListener('DOMContentLoaded', function () {
-          analytics.logEvent('page_blog_list', { page_path: window.location.pathname });
+          logEvent(analytics, 'page_blog_list');
      });
-   </script>
 
-
-<script>
      $(document).ready(function () {
        $('#blogSelected_tvOS').click(function () {
          var linkId = $(this).attr('id');
-         analytics.logEvent('click', { item_id: linkId });
+         logEvent(analytics, '(blogList)-click' + linkId);
        });
+     });
+   </script>
+
+<script>
+     // Add a script to hide/show the floating navigation on scroll
+     var floatingNavigation = document.querySelector('.floating-navigation');
+   
+     window.addEventListener('scroll', function() {
+       var windowHeight = window.innerHeight;
+       if (window.scrollY > windowHeight / 3) {
+         floatingNavigation.style.top = '-100px';
+       } else {
+         floatingNavigation.style.top = '0';
+       }
      });
    </script>
 
@@ -179,6 +252,12 @@
 <script src="js/jquery.parallax.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+<link rel='stylesheet' id='messappsnewDesign-css' href='../asset/wp-content/themes/twentysixteen/css/newDesign.css' media='all' />
+<link rel='stylesheet' id='messappsstyle-css' href='../asset/wp-content/themes/twentysixteen/css/style.min.css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css' href='../asset/wp-content/themes/twentysixteen/style.css' media='all' />
+
+<link rel='stylesheet' id='messappsnewDesignKatya-css' href='../asset/wp-content/themes/twentysixteen/css/Katya.css' media='all' />
+<link rel='stylesheet' id='tm-builder-modules-style-css' href='../asset/wp-content/plugins/power-builder/framework/assets/css/style.css' media='all' />
 
 </body>
 </html>
