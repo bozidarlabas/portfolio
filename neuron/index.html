@@ -93,7 +93,7 @@
                <div class="col-md-6 col-sm-12">
                    <div class="blog-post-thumb">
                        <div class="blog-post-image">
-                           <a href="tvOSBlogPost.html">
+                           <a href="tvOSBlogPost.html" id="blogSelected_tvOS1">
                                <img src="images/new_blog_1.png" class="img-responsive" alt="Blog Image">
                            </a>
                        </div>
@@ -102,11 +102,11 @@
                        </div>
                        <div class="blog-post-format">
                            <span>Božidar Labaš</span>
-                           <span><i class="fa fa-date"></i> Dec 8, 2023</span>
+                           <span><i class="fa fa-date"></i> Dec 12, 2023</span>
                        </div>
                        <div class="blog-post-des">
                            <p>In this blog post, I will share the most important differences I discovered between iOS and tvOS while developing a tvOS app. As you explore these distinctions, consider this as a valuable starting point for your journey into tvOS development.</p>
-                           <a href="tvOSBlogPost.html" class="btn btn-default">Continue Reading</a>
+                           <a href="tvOSBlogPost.html" class="btn btn-default"id="blogSelected_tvOS2">Continue Reading</a>
                        </div>
                    </div>
                </div>
@@ -196,40 +196,7 @@
      }
    </style>
 
-<script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-          import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
 
-          // TODO: Add SDKs for Firebase products that you want to use
-          // https://firebase.google.com/docs/web/setup#available-libraries
-
-          // Your web app's Firebase configuration
-          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-          const firebaseConfig = {
-            apiKey: "AIzaSyB3UeJ5by1Fs03NnWph4v2oy9YVz4vImmc",
-            authDomain: "portfolio-859ec.firebaseapp.com",
-            projectId: "portfolio-859ec",
-            storageBucket: "portfolio-859ec.appspot.com",
-            messagingSenderId: "826483746638",
-            appId: "1:826483746638:web:90d318c3bb4d33459a601f",
-            measurementId: "G-1MFPJYGHB4"
-          };
-
-          const app = initializeApp(firebaseConfig);
-          const analytics = getAnalytics(app);
-
-     document.addEventListener('DOMContentLoaded', function () {
-          logEvent(analytics, 'page_blog_list');
-     });
-
-     $(document).ready(function () {
-       $('#blogSelected_tvOS').click(function () {
-         var linkId = $(this).attr('id');
-         logEvent(analytics, '(blogList)-click_' + linkId);
-       });
-     });
-   </script>
 
 <script>
      // Add a script to hide/show the floating navigation on scroll
@@ -258,6 +225,44 @@
 
 <link rel='stylesheet' id='messappsnewDesignKatya-css' href='../asset/wp-content/themes/twentysixteen/css/Katya.css' media='all' />
 <link rel='stylesheet' id='tm-builder-modules-style-css' href='../asset/wp-content/plugins/power-builder/framework/assets/css/style.css' media='all' />
+
+<script type="module">
+     // Import the functions you need from the SDKs you need
+     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+           import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+ 
+           // TODO: Add SDKs for Firebase products that you want to use
+           // https://firebase.google.com/docs/web/setup#available-libraries
+ 
+           // Your web app's Firebase configuration
+           // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+           const firebaseConfig = {
+             apiKey: "AIzaSyB3UeJ5by1Fs03NnWph4v2oy9YVz4vImmc",
+             authDomain: "portfolio-859ec.firebaseapp.com",
+             projectId: "portfolio-859ec",
+             storageBucket: "portfolio-859ec.appspot.com",
+             messagingSenderId: "826483746638",
+             appId: "1:826483746638:web:90d318c3bb4d33459a601f",
+             measurementId: "G-1MFPJYGHB4"
+           };
+ 
+           const app = initializeApp(firebaseConfig);
+           const analytics = getAnalytics(app);
+ 
+      document.addEventListener('DOMContentLoaded', function () {
+           logEvent(analytics, 'page_blog_list');
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+            logEvent(analytics, 'page_home');
+
+            document.querySelectorAll('#blogSelected_tvOS, #blogSelected_tvOS1, #blogSelected_tvOS2').forEach(function (element) {
+              element.addEventListener('click', function () {
+               logEvent(analytics, '(blogList)-click_tvOSBlog');
+              });
+            });
+          });
+    </script>
 
 </body>
 </html>
